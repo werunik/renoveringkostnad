@@ -14,8 +14,8 @@ function calculateTotal(form){
 
   function kitchenTotal() {
     kitchen_total = (MATERIAL*projectSize) + (work_total-rot_total) + RESEKOSTNAD
-    window.location = 'http://localhost:8080/thanks.html?total=' + kitchen_total + 
-    '&owner=' + projectOwner + '&type=' + projectType
+    window.location = 'http://localhost:4000/en/total?total=' + kitchen_total + 
+    '&owner=' + projectOwner + '&type=' + projectType + '&size=' + projectSize
   }
 
   function bathroomTotal() {
@@ -58,12 +58,19 @@ function calculateTotal(form){
 function loadValues() {
   var owner = getParameterByName('owner');
   document.getElementById("owner").innerHTML = owner;
+  document.getElementsByTagName("input")[1].value = owner;
   
   var total = getParameterByName('total');
   document.getElementById("total").innerHTML = total;
+  document.getElementsByTagName("input")[2].value = total;
 
   var type = getParameterByName('type');
   document.getElementById("type").innerHTML = type;
+  document.getElementsByTagName("input")[3].value = type;
+
+  var size = getParameterByName('size');
+  document.getElementById("size").innerHTML = size;
+  document.getElementsByTagName("input")[4].value = size;
 }
 
 function getParameterByName(name, url) {

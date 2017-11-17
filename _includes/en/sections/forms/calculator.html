@@ -1,5 +1,5 @@
-<form id="nl-form" class="nl-form pa4">
-  Hej! <br>
+<form id="nl-form" class="nl-form">
+  <span id="timeofday">Godmorgon</span>! <br>
   Jag heter <input type="text" name="owner" value="" placeholder="skriv ditt namn" data-subline="For example: <em>Alexandra</em> or <em>Björn</em>"/>,
   och önskar renovera mitt
   <select name="project">
@@ -12,7 +12,7 @@
   <br />som är
   <input type="text" name="size" value="" placeholder="kvadratmeter" data-subline="For example: <em>5</em> or <em>20</em>"/> kvm.  
   <div class="nl-submit-wrap">
-    <button class="nl-submit" type="submit" onClick='return calculateTotal(this.form)'>Rakna total kostnad</button>
+    <button class="btn btn--primary uppercase" type="submit" onClick='return calculateTotal(this.form)'>Rakna total kostnad</button>
   </div>
   <div class="nl-overlay"></div>
 </form>

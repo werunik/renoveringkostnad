@@ -2,8 +2,9 @@
 .nl-form {
   width: 100%;
   margin: 0.3em auto 0 auto;
-  font-size: 2.5em;
+  padding: 10px 40px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .nl-form ul {
@@ -14,8 +15,7 @@
 
 /* normalize the input elements, make them look like everything else */
 .nl-form input,
-.nl-form select,
-.nl-form button {
+.nl-form select {
   border: none;
   background: transparent;
   font-family: inherit;
@@ -156,30 +156,30 @@
 }
 
 /* custom placeholder color */
-input::-webkit-input-placeholder {
+.nl-form input::-webkit-input-placeholder {
   color: rgba(255,255,255,0.8);
 }
 
-input:active::-webkit-input-placeholder ,
-input:focus::-webkit-input-placeholder {
+.nl-form input:active::-webkit-input-placeholder ,
+.nl-form input:focus::-webkit-input-placeholder {
   color: rgba(255,255,255,0.2);
 }
 
-input::-moz-placeholder {
+.nl-form input::-moz-placeholder {
   color: rgba(255,255,255,0.8);
 }
 
-input:active::-moz-placeholder,
-input:focus::-moz-placeholder {
+.nl-form input:active::-moz-placeholder,
+.nl-form input:focus::-moz-placeholder {
   color: rgba(255,255,255,0.2);
 }
 
-input:-ms-input-placeholder {  
+.nl-form input:-ms-input-placeholder {  
   color: rgba(255,255,255,0.8);
 }
 
-input:active::-ms-input-placeholder ,
-input:focus::-ms-input-placeholder {
+.nl-form input:active::-ms-input-placeholder ,
+.nl-form input:focus::-ms-input-placeholder {
   color: rgba(255,255,255,0.2);
 }
 
@@ -199,29 +199,7 @@ input:focus::-ms-input-placeholder {
 
 /* submit button */
 .nl-submit-wrap {
-  margin-top: 0.4em;
-}
-
-.nl-form .nl-submit {
-  line-height: 3;
-  text-transform: uppercase;
-  cursor: pointer;
-  position: relative;
-  background: $navyblue;
-  color: #fff;
-  padding: 0 1em 0 0;
-  font-size: 40%;
-  font-weight: bold;
-  letter-spacing: 3px;
-}
-
-.nl-submit:before {
-  content: url(/assets/images/icons/next.svg);
-  color: #fff;
-  float: left;
-  padding: 0 0.7em;
-  margin: 0 0.8em 0 0;
-  background: $navyblue-lighter;
+  margin-top: 1.4em;
 }
 
 .no-touch .nl-form .nl-submit:hover,

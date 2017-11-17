@@ -21,15 +21,6 @@
 <meta name="twitter:creator" content="@renoveringkostnad">
 <meta name="twitter:image" content="{% if page.meta_image %}{{ page.meta_image | flatify }}{% else %}{{ site.og_image }}{% endif %}">
 
-<div itemscope itemtype="http://schema.org/WebSite">
-  <meta itemprop="name" content="{% if page.title %}{{ page.title }} | {{site.name}}{% else %}{{ site.name }}{% endif %}">
-  <meta itemprop="alternateName" content="{{ site.name }}">
-  <meta itemprop="url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-  <meta itemprop="description" content="{% if page.description %}{{ page.description | flatify }}{% else %}{{ site.description }}{% endif %}">
-  <meta itemprop="image" content="{% if page.meta_image %}{{ page.meta_image | flatify }}{% else %}{{ site.og_image }}{% endif %}">
-</div>
-
-
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
