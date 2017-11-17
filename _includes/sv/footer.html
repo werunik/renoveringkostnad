@@ -1,0 +1,82 @@
+<footer class="bg-dark-gray moon-gray pa3 ph5-ns">
+  <div class="fl w-100 mb4">
+    <ul class="fl w-100 w-20-ns ph3 pa0-ns list">
+      <img src="/assets/images/logo/logo-white.svg" class="h1" alt="Logo">
+      <li class="mv2">
+        <img src="/assets/images/icons/email.svg" class="h1 v-top dib mr3" alt="Email">
+        <span class="f6">{{ site.email }}</span>
+      </li>
+      <li class="mv2">
+        <img src="/assets/images/icons/phone.svg" class="h1 v-top dib mr3" alt="phone">
+        <span class="f6">{{ site.phone }}</span>
+      </li>
+      <li class="mv2">
+        <img src="/assets/images/icons/address.svg" class="h1 v-top dib mr3" alt="address">
+        <span class="f6">{{ site.address }}</span>
+      </li>
+      <li class="mv2">
+        <span class="h1 v-top dib mr4"></span>
+        <span class="f6">{{ site.postalcode }} {{ site.city }}</span>
+      </li>
+    </ul>
+    <ul class="fl w-100 w-40-ns ph3 list">
+      <h5 class="f5 fw4 ma0 pb2 bb b--mid-gray">Information</h5>
+      <ul class="fl w-third list pa0">
+        {% for link in site.data.navigation-footer.information.col-1 %}
+        <li class="mv3">
+          <a data-scroll href="{{ link.url_sv }}" title="{{ link.title_sv }}" class="moon-gray dim link pointer">{{ link.title_sv }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="fl w-third list pa0">
+        {% for link in site.data.navigation-footer.information.col-2 %}
+        <li class="mv3">
+          <a data-scroll href="{{ link.url_sv }}" title="{{ link.title_sv }}" class="moon-gray dim link pointer">{{ link.title_sv }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="fl w-third list pa0">
+        {% for link in site.data.navigation-footer.information.col-3 %}
+        <li class="mv3">
+          <a data-scroll href="{{ link.url_sv }}" title="{{ link.title_sv }}" class="moon-gray dim link pointer">{{ link.title_sv }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </ul>
+    <ul class="fl w-100 w-40-ns ph3 list">
+      <h5 class="f5 fw4 ma0 pb2 bb b--mid-gray">About Angelr</h5>
+      <ul class="fl w-third list pa0">
+        {% for link in site.data.navigation-footer.about.col-1 %}
+        <li class="mv3">
+          <a data-scroll href="{{ link.url_sv }}" title="{{ link.title_sv }}" class="moon-gray dim link pointer">{{ link.title_sv }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="fl w-third list pa0">
+        {% for link in site.data.navigation-footer.about.col-2 %}
+        <li class="mv3">
+          <a data-scroll href="{{ link.url_sv }}" title="{{ link.title_sv }}" class="moon-gray dim link pointer">{{ link.title_sv }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <ul class="fl w-third list pa0">
+        {% for link in site.data.navigation-footer.about.col-3 %}
+        <li class="mv3">
+          <a data-scroll href="{{ link.url }}" title="{{ link.title_sv }}" class="moon-gray dim link pointer">{{ link.title_sv }}</a>
+        </li>
+        {% endfor %}
+        <li class="mv3">
+          {% for link in site.data.socialmedia %}
+          <a href="{{ link.url }}" title="{{ link.title }}" class="dim link">
+            <img src="{{ link.icon }}" class="h1 v-top dib mr2" alt="{{ link.title }}">
+          </a>
+          {% endfor %}
+        </li>
+      </ul>
+    </ul>
+  </div>
+  <p class="f7 lh-copy mv3-sm light-silver">Angelr is a funding portal owned and operated by Angelr AB. Angelr is not a broker dealer or an investment adviser. Nothing on this site constitutes advice to buy or sell securities. All activities on this site are governed by our Terms of Service. Arbitration is the sole dispute resolution method for any legal matter involving Angelr or its users.</p>
+  <p class="f7 lh-copy mv3-sm light-silver">Every investor should be aware that investments in private companies are particularly risky and may result in total loss of invested capital. Past performance of a security or a company does not guarantee future results or returns. Only investors who understand the risks of early stage investment and who meet Angelr’s investment criteria may invest.</p>
+  <p class="f7 lh-copy mv3-sm light-silver">Angelr do not recommend any companies for investment, endorse their fitness for investment or verify or claim the accuracy of information provided by such companies. No part of the work carried out by Angelr is intended to constitute financial advice.</p>
+  <p class="f7 tc mv4">© Angelr 2017</p>
+</footer>

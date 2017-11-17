@@ -1,0 +1,25 @@
+---
+layout: en/layout
+---
+<div class="pt5-ns">
+  <section class="bg-white cf dark-gray pa4 pt3-ns pb5-ns ph5-ns">
+    <div class="fl w-100 mt5-ns">
+      <div class="f5 fw3 mw8-ns center lh-copy">
+        <ul class="list pa0">
+          <li class="dib mr3">
+            <img src="/assets/images/icons/news-gray.svg" class="h1 v-mid dib" alt="News">
+            <span class="ttu f6 dib">{{ page.category }}</span>
+          </li>
+          <li class="dib">
+            <img src="/assets/images/icons/calendar-gray.svg" class="h1 v-mid dib" alt="Calendar">
+            <span class="ttu f6 dib">{{ page.date | date: '%b %d' }}</span>
+          </li>
+        </ul>
+        {{ content }}
+      </div>
+      <div class="f5 fw3 mw8-ns center lh-copy tc mt5">
+        <a href="/en/blog" class="f5 brand hover-bg-dark-brand hover-white no-underline pv2 ph4-ns tc ba b--brand br2 db dib-ns" title="Seel all posts">Seel all posts</a>
+      </div>
+    </div>
+  </section>
+</div>

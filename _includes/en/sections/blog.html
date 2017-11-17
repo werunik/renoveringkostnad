@@ -1,0 +1,23 @@
+<section class="bg-brand cf white ph3 ph5-ns">
+  <h4 class="f4 f2-ns fw7 bb-custom-sm bb-custom-white tc mb0">Latest News</h4>
+  <div class="fl w-100 mt2 mb4">
+    {% for post in site.posts limit:3 %}
+    <div class="fl w-100 w-third-ns pv2 ph4">
+      <h3 class="f5 fw4 mb0 mb4-ns h2-ns">
+        <a href="{{ post.url }}" class="white link no-underline hover-white-70 pointer" title="{{post.title}}">{{post.title}}</a>
+      </h3>
+      <p class="f5 fw3 mv1 mb4-ns">{{ post.content | strip_html | truncate: 135 }}</p>
+      <ul class="list pa0">
+        <li class="dib mr3">
+          <img src="/assets/images/icons/news.svg" class="h1 v-top dib" alt="News">
+          <span class="ttu f6 dib">{{ post.category }}</span>
+        </li>
+        <li class="dib">
+          <img src="/assets/images/icons/calendar.svg" class="h1 v-top dib" alt="Calendar">
+          <span class="ttu f6 dib">{{ post.date | date: '%b %d' }}</span>
+        </li>
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>

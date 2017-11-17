@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Linkedin",
+    "url": "https://www.linkedin.com/company/10235172",
+    "icon": "/assets/images/icons/social/linkedin.svg"
+  },
+  {
+    "title": "Facebook",
+    "url": "https://www.facebook.com/angelrswe",
+    "icon": "/assets/images/icons/social/facebook.svg"
+  },
+  {
+    "title": "Instagram",
+    "url": "https://www.instagram.com/angelr.co",
+    "icon": "/assets/images/icons/social/instagram.svg"
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Log in",
+    "title_sv": "Logga in",
+    "url": "http://app.angelr.co/users/sign_in",
+    "css_home": "ph3 dim nav-link",
+    "css": "ph3 dim brand"
+  },
+  {
+    "title": "Sign up",
+    "title_sv": "Bli medlem",
+    "url": "http://app.angelr.co/users/sign_up",
+    "css_home": "mh2 pv2 ph3 ba br2 bg-transparent hover-bg-dark-brand hover-white hover-ba--brand-darker nav-signup",
+    "css": "mh2 pv2 ph3 ba br2 white bg-brand hover-bg-dark-brand hover-white hover-ba--brand-darker"
+  }
+]

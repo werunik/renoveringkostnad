@@ -1,0 +1,60 @@
+<meta name="google-site-verification" content="">
+<!-- Open Graph data -->
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} | {{site.name}}{% else %}{{ site.name }}{% endif %}">
+<meta property="og:description" content="{% if page.description %}{{ page.description | flatify }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+<meta property="og:image" content="{% if page.meta_image %}{{ page.meta_image | flatify }}{% else %}{{ site.og_image }}{% endif %}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="fb:admins" content="">
+<meta property="og:locale" content="en">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@renoveringkostnad">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {{site.name}}{% else %}{{ site.name }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description | flatify }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:creator" content="@renoveringkostnad">
+<meta name="twitter:image" content="{% if page.meta_image %}{{ page.meta_image | flatify }}{% else %}{{ site.og_image }}{% endif %}">
+
+<div itemscope itemtype="http://schema.org/WebSite">
+  <meta itemprop="name" content="{% if page.title %}{{ page.title }} | {{site.name}}{% else %}{{ site.name }}{% endif %}">
+  <meta itemprop="alternateName" content="{{ site.name }}">
+  <meta itemprop="url" content="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+  <meta itemprop="description" content="{% if page.description %}{{ page.description | flatify }}{% else %}{{ site.description }}{% endif %}">
+  <meta itemprop="image" content="{% if page.meta_image %}{{ page.meta_image | flatify }}{% else %}{{ site.og_image }}{% endif %}">
+</div>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": "{{ site.url }}{{ page.url | replace:'index.html','' }}",
+    "headline": "{{ page.title }}",
+    "description": "{{ page.description | flatify }}",
+    "author": {
+      "@type": "Organization",
+      "name": "{{ site.name }}"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.logo }}",
+
+        "width": 200,
+        "height": 60
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "{% if page.meta_image %}{{ page.meta_image | flatify }}{% else %}{{ site.og_image }}{% endif %}"
+    }
+  }
+</script>

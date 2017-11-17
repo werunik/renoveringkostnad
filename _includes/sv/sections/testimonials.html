@@ -1,0 +1,13 @@
+<section class="{{ include.class }} ph2 pt2 pb5 ph5-ns pt3-ns pb5-ns cf dark-gray">
+  <h4 class="f4 f2-ns fw7 tc bb-custom-sm bb-custom-brand mt3">Några ord från våra investerare</h4>
+  <ul class="fl w-100 list tc ph0 main-carousel" data-flickity='{ "wrapAround": true, "prevNextButtons": false, "autoPlay": true, "initialIndex": 1 }'>
+    {% for testimonial in site.data.testimonials %}
+      <li class="fl w-100 w-third-ns ph3 carousel-cell">
+        <img src="{{ testimonial.picture }}" class="h4" alt="{{ testimonial.name }}">
+        <h2 class="brand ttu h2">{{ testimonial.name }}</h2>
+        <h3 class="f4 fw3 lh-title h3">{{ testimonial.position_sv }}</h3>
+        <p class="f5 fw3 mid-gray tl">"{{ testimonial.body_sv }}"</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

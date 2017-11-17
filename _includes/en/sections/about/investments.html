@@ -1,0 +1,15 @@
+<section class="bg-white cf dark-gray pa4 pt3-ns pb5-ns ph5-ns" id="investments">
+  <h4 class="f4 f2-ns fw7 bb-custom-sm bb-custom-brand tc">Our Investments</h4>
+  <div class="fl w-100 mt5-ns ph5-ns">
+    <ul class="fl w-100 list tc ph0">
+      {% assign investments = site.data.transactions | where:"invested_in",true %}
+      {% for investment in investments %}
+        <li class="dib mh2">
+          <a href="{{ investment.url }}" title="{{ investment.company }}" class="link">
+            <img src="{{ investment.logo }}" class="h3" alt="{{ investment.company }}">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

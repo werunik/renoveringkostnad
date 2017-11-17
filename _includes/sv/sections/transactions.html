@@ -1,0 +1,17 @@
+<section class="{{ include.class }} pt3 pb5 ph2 ph6-ns cf dark-gray" id="transactions">
+  <h4 class="f4 fw4 moon-gray tc ttu">Transaktioner</h4>
+  <ul class="fl w-100 list tc ph0 main-carousel" data-flickity='{ "wrapAround": true, "contain": true, "initialIndex": 1, "pageDots": false }'>
+    {% assign transactions = site.data.transactions | where:"is_slider",true %}
+      {% for transaction in transactions reversed %}
+      <li class="fl w-100 w-third-ns ph3 ph3-ns carousel-cell">
+        <div class="bg-white pv5 ph3">
+          <img src="{{ transaction.logo }}" class="h2" alt="{{ transaction.name }}">
+          <h5 class="f3 ttu">{{ transaction.amount_sv }}</h5>
+          <h5 class="f5 fw4 ttu ma0">{{ transaction.investment_type_sv }}</h5>
+          <h5 class="f5 fw4 ttu ma0">{{ transaction.date }}</h5>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  <p class="fl w-100 f7 mt4 tc cf moon-gray">*Please note, Angelr may have raised all or parts of the total investment rounds listed above</p>
+</section>

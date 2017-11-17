@@ -1,0 +1,84 @@
+{
+  "information": {
+    "col-1": [
+      {
+        "title": "For investors",
+        "title_sv": "För investerare",
+        "url": "/en/investors",
+        "url_sv": "/sv/investerare"
+      },
+      {
+        "title": "For startups",
+        "title_sv": "För startups",
+        "url": "/en/startups",
+        "url_sv": "/sv/startup"
+      }
+    ],
+    "col-2": [
+      {
+        "title": "Our service",
+        "title_sv": "Våra tjänster",
+        "url": "/#service",
+        "url_sv": "/sv/hem#service"
+      },
+      {
+        "title": "Our investments",
+        "title_sv": "Våra investeringar",
+        "url": "/en/about#investments",
+        "url_sv": "/sv/om#investments"
+      }
+    ],
+    "col-3": [
+      {
+        "title": "FAQ",
+        "title_sv": "FAQ",
+        "url": "/en/faq",
+        "url_sv": "/en/faq"
+      },
+      {
+        "title": "Transactions",
+        "title_sv": "Transaktioner",
+        "url": "/#transactions",
+        "url_sv": "/sv/hem#transactions"
+      }
+    ]
+  },
+  "about": {
+    "col-1": [
+      {
+        "title": "About",
+        "title_sv": "Om",
+        "url": "/en/about",
+        "url_sv": "/sv/om"
+      },
+      {
+        "title": "Terms",
+        "title_sv": "Användarvillkor",
+        "url": "/en/terms",
+        "url_sv": "/en/terms"
+      }
+    ],
+    "col-2": [
+      {
+        "title": "Our team",
+        "title_sv": "Vårt team",
+        "url": "/en/about#team",
+        "url_sv": "/sv/om#team"
+      },
+      {
+        "title": "Privacy",
+        "title_sv": "Integritetspolicy",
+        "url": "/en/privacy",
+        "url_sv": "/en/privacy"
+      }
+    ],
+    "col-3": [
+      {
+        "title": "Career",
+        "title_sv": "Karriär",
+        "url": "https://career.angelr.co",
+        "url_sv": "https://career.angelr.co"
+      }
+    ]
+  }
+}

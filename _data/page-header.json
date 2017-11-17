@@ -1,0 +1,75 @@
+[
+  {
+    "title": "About",
+    "title_sv": "Om",
+    "subtitle": "We Are a Next-Generation Corporate Finance Firm for Startups and Tech Companies",
+    "subtitle_sv": "Vi är en nästa generations corporate finance firma för startups och teknikbolag",
+    "link": {
+      "title": "Become a Member",
+      "title_sv": "Bli medlem",
+      "url": "#lead"
+    }
+  },
+  {
+    "title": "For Startups",
+    "title_sv": "För Startups",
+    "subtitle": "Focus on Your Business and Let Us Help You Fundraise",
+    "subtitle_sv": "Fokusera på din verksamhet och låt oss leta kapital",
+    "link": {
+      "title": "Apply Your Startup",
+      "title_sv": "Ansök med ditt startup",
+      "url": "#startup-form"
+    }
+  },
+  {
+    "title": "Invest in startups",
+    "title_sv": "Investera i startups",
+    "subtitle": "Build a Startup Portfolio with Angelr",
+    "subtitle_sv": "Bygg upp en portfölj av startups med Angelr",
+    "link": {
+      "title": "Become a Member",
+      "title_sv": "Bli medlem",
+      "url": "#lead"
+    }
+  },
+  {
+    "title": "Blog",
+    "title_sv": "Blogg",
+    "subtitle": "News & Updates",
+    "link": {
+      "title": "Become a Member",
+      "title_sv": "Bli medlem",
+      "url": "#lead"
+    }
+  },
+  {
+    "title": "FAQ",
+    "title_sv": "FAQ",
+    "subtitle": "Frequently Asked Questions",
+    "link": {
+      "title": "Become a Member",
+      "title_sv": "Bli medlem",
+      "url": "#lead"
+    }
+  },
+  {
+    "title": "Privacy Policy",
+    "title_sv": "Privacy Policy",
+    "subtitle": "Privacy Policy",
+    "link": {
+      "title": "Become a Member",
+      "title_sv": "Bli medlem",
+      "url": "#lead"
+    }
+  },
+  {
+    "title": "Terms of Service",
+    "title_sv": "Terms of Service",
+    "subtitle": "Terms of Service",
+    "link": {
+      "title": "Become a Member",
+      "title_sv": "Bli medlem",
+      "url": "#lead"
+    }
+  }
+]

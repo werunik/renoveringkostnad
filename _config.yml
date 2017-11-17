@@ -1,0 +1,33 @@
+title: Renovering Kostnad
+email: hello@renoveringkostnad.com
+description: 
+baseurl: ""
+url: "https://www.renoveringkostnad.com"
+phone: ""
+address: ""
+postalcode: ""
+city: "Stockholm"
+
+collections:
+  posts:
+    permalink: /blog/:title
+  pages:
+    output: true
+    permalink: /:name
+
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: /assets/styles
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/*
+  - README.md

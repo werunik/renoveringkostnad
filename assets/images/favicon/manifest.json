@@ -1,0 +1,17 @@
+{
+	"name": "Angelr",
+	"icons": [
+		{
+			"src": "/assets/favicon/android-chrome-192x192-2024a13aa54f99785a8b7040c193581db58196f207bafdb95ce7e5e5e39dce79.png",
+			"sizes": "192x192",
+			"type": "image\/png"
+		},
+		{
+			"src": "/assets/favicon/android-chrome-512x512-76aa635e52608a634e0708f299cff7c102dd129542d6c7db351d0418d240d600.png",
+			"sizes": "512x512",
+			"type": "image\/png"
+		}
+	],
+	"theme_color": "#ffffff",
+	"display": "standalone"
+}

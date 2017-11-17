@@ -1,0 +1,10 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | flatify }}{% else %}{{ site.description }}{% endif %}">
+  {% include en/meta/meta.html %}
+  <link href="{{ site.baseurl }}/assets/styles/main.css" rel="stylesheet">
+  {% include en/meta/analytics.html %}
+</head>

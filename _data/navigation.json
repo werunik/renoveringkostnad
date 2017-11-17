@@ -1,0 +1,32 @@
+[
+  {
+    "title": "For investors",
+    "title_sv": "För investerare",
+    "url": "/en/investors",
+    "url_sv": "/sv/investerare"
+  },
+  {
+    "title": "For startups",
+    "title_sv": "För startups",
+    "url": "/en/startups",
+    "url_sv": "/sv/startup"
+  },
+  {
+    "title": "About",
+    "title_sv": "Om",
+    "url": "/en/about",
+    "url_sv": "/sv/om"
+  },
+  {
+    "title": "Career",
+    "title_sv": "Karriär",
+    "url": "https://career.angelr.co",
+    "url_sv": "https://career.angelr.co"
+  },
+  {
+    "title": "Blog",
+    "title_sv": "Blogg",
+    "url": "/en/blog",
+    "url_sv": "/en/blog"
+  }
+]

@@ -1,0 +1,9 @@
+<section class="bg-brand cf white pa4 pa5-ns">
+  {% assign title = include.title %}
+  {% assign items = site.data.page-header | where:"title",title %}
+  {% for item in items %}
+    <h1 class="f5 f4-ns fw6 mv2">{{ item.title_sv }}</h1>
+    <h2 class="f4 f1-ns fw3 mv2 bb-custom-sm bb-custom-sm-tl bb-custom-white">{{ item.subtitle_sv }}</h2>
+    <a href="{{ item.link.url }}" class="mt3 f5 bg-white brand hover-bg-dark-brand hover-white no-underline pv3 ph4 br2 mr3 db dib-ns" title="{{ item.link.title }}">{{ item.link.title_sv }}</a>
+  {% endfor %}
+</section>

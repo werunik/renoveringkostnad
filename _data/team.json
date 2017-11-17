@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Camilla Lundin",
+    "position": "Co-founder, CEO",
+    "position_sv": "Grundare, Vice VD",
+    "email": "camilla@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/camilla-lundin-62966ab1/",
+    "phone": "+46 73-633 43 31",
+    "picture": "/assets/images/team/camilla-lundin.jpg"
+  },
+  {
+    "name": "Vendela Lilliestråle",
+    "position": "Co-founder, Dep. CEO",
+    "position_sv": "Co-founder, Dep. CEO",
+    "email": "vendela@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/vendela-lilliestrale/",
+    "phone": "+46 73-086 30 95",
+    "picture": "/assets/images/team/vendela-lilliestrale.jpg"
+  },
+  {
+    "name": "Simon M. Lidén",
+    "position": "Co-founder",
+    "position_sv": "Co-founder",
+    "email": "simon@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/simonmliden/",
+    "phone": "+46 73-726 45 98",
+    "picture": "/assets/images/team/simon-m-liden.jpg"
+  },
+  {
+    "name": "Oscar Hentschel",
+    "position": "Co-founder",
+    "position_sv": "Co-founder",
+    "email": "oscar@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/oscar-hentschel-99258384/",
+    "phone": "+46 70-797 02 09",
+    "picture": "/assets/images/team/oscar-hentschel.jpg"
+  },
+  {
+    "name": "Joel Strömberg",
+    "position": "Analyst",
+    "position_sv": "Analyst",
+    "email": "joel@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/joel-str%C3%B6mberg-a75565109/",
+    "picture": "/assets/images/team/joel-stromberg.jpg"
+  },
+  {
+    "name": "Louise Hultman",
+    "position": "Analyst",
+    "position_sv": "Analyst",
+    "email": "louise@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/louise-hultman-b9b1b6149/",
+    "picture": "/assets/images/team/louise-hultman.jpg"
+  },
+  {
+    "name": "Anton Giwercman",
+    "position": "Analyst",
+    "position_sv": "Analyst",
+    "email": "anton@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/antongiwercman/",
+    "picture": "/assets/images/team/anton-giwercman.jpg"
+  },
+  {
+    "name": "Sophia Lindgren",
+    "position": "Analyst",
+    "position_sv": "Analyst",
+    "email": "sophia.lindgren@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/sophia-lindgren-bb0b05128/",
+    "picture": "/assets/images/team/sophia-lindgren.jpg"
+  },
+  {
+    "name": "Alexander Käll",
+    "position": "Analyst",
+    "position_sv": "Analyst",
+    "email": "alexander.kall@angelr.co",
+    "picture": "/assets/images/team/alexander-kall.jpg"
+  },
+  {
+    "name": "Pontus Gustafsson",
+    "position": "Venture Advisor",
+    "position_sv": "Venture Advisor",
+    "email": "pontus@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/gustafssonpontus/",
+    "picture": "/assets/images/team/team.jpg"
+  },
+  {
+    "name": "Isak Nyberg",
+    "position": "Analyst",
+    "position_sv": "Analyst",
+    "email": "isak@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/isakny/",
+    "picture": "/assets/images/team/team.jpg"
+  },
+  {
+    "name": "Sophia Granfors",
+    "position": "Analyst",
+    "position_sv": "Analyst",
+    "email": "sophia.granfors@angelr.co",
+    "linkedin": "https://www.linkedin.com/in/sophia-granfors-a02946105/",
+    "picture": "/assets/images/team/team.jpg"
+  }
+]

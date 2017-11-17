@@ -1,0 +1,60 @@
+<header class="db dn-ns burger pb4">
+  <a href="/" class="">
+    <img src="/assets/images/logo/logo.svg" class="h2">
+  </a>
+  <input id="burger" type="checkbox">
+  <label for="burger">
+    <span class="bg-brand"></span>
+    <span class="bg-brand"></span>
+    <span class="bg-brand"></span>
+  </label>
+  <nav>
+    <ul class="list pa0 tc absolute">
+      {% for link in site.data.navigation %}
+      <li class="pv3 bb b--near-white">
+        <a href="{{ link.url_sv }}" title="{{ link.title_sv }}" class="link brand dim f5 fw6">{{ link.title_sv }}</a>
+      </li>
+      {% endfor %}
+      {% for link in site.data.navigation-auth %}
+      <li class="pv3 bb b--near-white">
+        <a href="{{ link.url_sv }}" title="{{ link.title_sv }}" class="link brand dim f5 fw6">{{ link.title_sv }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
+<header class="dn db-ns">
+  <nav class="w-100 z-999 bg-white scroll fixed">
+    <ul class="fl w-10 list">
+      <li class="dib ma0">
+        <a href="/" class="dib">
+          <img src="/assets/images/logo/logo.svg" class="h2">
+        </a>
+      </li>
+    </ul>
+    <ul class="fl w-50 list lh-copy">
+      {% for link in site.data.navigation %}
+        <li class="dib pv2">
+          <a href="{{ link.url_sv }}" class="f6 custom-fw6 dim no-underline brand ph4">{{ link.title_sv }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+    <ul class="fl w-40 list lh-copy tr ph4">
+      {% for link in site.data.navigation-auth %}
+        <li class="dib pv2">
+          <a href="{{ link.url }}" class="f6 custom-fw6 no-underline {{ link.css }}">{{ link.title_sv }}</a>
+        </li>
+      {% endfor %}
+      <li class="dib pv2">
+        <a href="/sv/hem" class="f6 fw6 white hover-white-70 no-underline ph1">
+          <img src="/assets/images/icons/flags/se.svg" class="h1 dim">
+        </a>
+      </li>
+      <li class="dib pv2">
+        <a href="/" class="f6 fw6 white hover-white-70 no-underline ph1">
+          <img src="/assets/images/icons/flags/gb.svg" class="h1 dim">
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,11 @@
+$brand: #0099CC;
+$brand-darker: #028dbb;
+$navyblue: #272c61;
+$navyblue-lighter: lighten($navyblue, 5%);
+
+.white {
+  color: #fff;
+}
+.bg-brand-darker {
+  background-color: $brand-darker; 
+}

@@ -1,0 +1,18 @@
+<form id="nl-form" class="nl-form pa4">
+  Hej! <br>
+  Jag heter <input type="text" name="owner" value="" placeholder="skriv ditt namn" data-subline="For example: <em>Alexandra</em> or <em>Björn</em>"/>,
+  och önskar renovera mitt
+  <select name="project">
+    <option value="kitchen" selected>Kök</option>
+    <option value="bathroom">Badrum</option>
+    <option value="wc">WC</option>
+    <option value="sauna">Bastu</option>
+    <option value="laundry">Tvättstuga</option>
+  </select>
+  <br />som är
+  <input type="text" name="size" value="" placeholder="kvadratmeter" data-subline="For example: <em>5</em> or <em>20</em>"/> kvm.  
+  <div class="nl-submit-wrap">
+    <button class="nl-submit" type="submit" onClick='return calculateTotal(this.form)'>Rakna total kostnad</button>
+  </div>
+  <div class="nl-overlay"></div>
+</form>

@@ -1,0 +1,27 @@
+<section class="bg-white cf dark-gray pa4 pt3-ns pb5-ns ph5-ns" id="team">
+  <h4 class="f4 f2-ns fw7 bb-custom-sm bb-custom-brand tc">Vårt team</h4>
+  <div class="fl w-100 mt5-ns ph5-ns">
+    {% for member in site.data.team %}
+      <div class="fl w-50 w-20-ns pa2">
+        <div class="img__wrap relative ba b--transparent h-191x191">
+          <img class="img__img" src="{{ member.picture }}" alt="{{ member.name }}">
+          <div class="img__description_layer absolute top-0 right-0 bottom-0 left-0 white o-0 flex items-end justify-start pl1 pl3-ns">
+            <p class="img__description">
+              <span class="db fw5 mb2-ns">{{ member.name }}</span>
+              <span class="db fw3 mb2-ns">{{ member.position_sv }}</span>
+              <span class="db fw3 mb2-ns">{{ member.email }}</span>
+              {% if member.phone %}
+              <span class="db fw3 mb2-ns">{{ member.phone }}</span>
+              {% endif %}
+              {% if member.linkedin %}
+              <a href="{{ member.linkedin }}" title="linkedin" class="dib dim">
+                <img src="/assets/images/icons/social/linkedin.svg" alt="linkedin">
+              </a>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

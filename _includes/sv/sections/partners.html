@@ -1,0 +1,10 @@
+<section class="bg-light-brand pa2 cf moon-gray">
+  <h4 class="f4 fw4 tc ttu">Partnerföretag</h4>
+  <ul class="fl w-100 list tc ph0">
+    {% for partner in site.data.partners %}
+      <li class="dib">
+        <img src="{{ partner.picture }}" class="h2" alt="{{ partner.name }}">
+      </li>
+    {% endfor %}
+  </ul>
+</section>

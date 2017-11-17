@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv">
+  {% include sv/head.html %}
+  <body class="{{ page.class }}">
+    {% include sv/header.html %}
+    {% include sv/main.html %}
+    {% include sv/footer.html %}
+    {% include sv/sections/forms/contact.html %}
+    {% include sv/sections/forms/startup.html %}
+    {% include sv/sections/forms/learnmore.html %}
+    {% include sv/sections/forms/lead.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.slim.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.1/remodal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js"></script>
+    <script src="/assets/scripts/main.js" type="text/javascript"></script>
+    {% if page.custom_js %}
+      {% for js_file in page.custom_js %}
+        <script src='/assets/scripts/{{ js_file }}.js' type="text/javascript"></script>
+      {% endfor %}
+    {% endif %}
+  </body>
+</html>

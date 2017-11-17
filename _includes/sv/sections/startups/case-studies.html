@@ -1,0 +1,51 @@
+<section class="bg-white cf dark-gray pa4 pt3-ns pb5-ns ph5-ns">
+  <h4 class="f4 f2-ns fw7 bb-custom-sm bb-custom-brand tc">Fallstudier</h4>
+  <p class="f5 f4-ns fw1 mid-gray tc lh-copy">Angelr har hjälpt {{ site.data.transactions | size }} bolag med kapitalanskaffning under 2017. Nedan kan du läsa vad entreprenörerna vi har hjälpt säger.</p>
+  {% assign transactions = site.data.transactions | where:"is_case_study",true %}
+  {% for transaction in transactions %}
+  <div class="fl w-100 mt5-ns ph5-ns">
+    <div class="{{ transaction.float }} w-100 w-30-ns pa0 pa2-ns">
+      <img src="{{ transaction.picture }}" class="w6-ns" alt="{{ transaction.company }}">
+    </div>
+    <div class="fl w-100 w-70-ns pv2 ph0 {{ transaction.padding }}">
+      <a href="{{ transaction.url }}" class="f4 f3-ns fw6 link dim ttu brand db" title="{{ transaction.company }}">
+        {{ transaction.company }} <img src="/assets/images/icons/external_link.svg" class="h1 pv1" alt="External url">
+      </a>
+      <p class="lh-copy f6 f5-ns fw3 mv3">"{{ transaction.testimonial.body }}"</p>
+      <div>
+        <span class="f5 fw6 db gray">{{ transaction.testimonial.name }}</span>
+        <span class="f5 fw3 db">
+          {{ transaction.testimonial.position_sv }}
+          <span class="ph1 ttu">{{ transaction.company }}</span>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="fl w-100 mt3 ph4-ns gray bb-custom-lg bb-custom-near-white">
+    <div class="fl w-third pv2 ph5-ns tl tc-ns">
+      <span class="f6 f5-ns fw6 db ttu">Kapitalbelopp</span>
+      <span class="f6 f5-ns db ttu">{{ transaction.amount_sv }}</span>
+    </div>
+    <div class="fl w-third pv2 ph5-ns tl tc-ns">
+      <span class="f6 f5-ns fw6 db ttu">Typ</span>
+      <span class="f6 f5-ns db">{{ transaction.type_sv }}</span>
+    </div>
+    <div class="fl w-third pv2 ph5-ns tl tc-ns">
+      <span class="f6 f5-ns fw6 db ttu">Antal Investerare</span>
+      <span class="f6 f5-ns db ttu">{{ transaction.num_investors }}</span>
+    </div>
+  </div>
+  {% endfor %}
+  <div class="mw7-ns center cf mt3-ns ph4-ns">
+    <ul class="list pa0 tc fl w-100">
+      <li class="dib v-top-ns ph5-ns">
+        <div class="f1 f5rem-ns fw6 brand">{{ site.data.transactions | size }}</div>
+        <p class="fw3">Antal företag vi har hjälp med<br> finansiering under 2017</p>
+      </li>
+      <li class="dib v-top-ns ph5-ns">
+        <div class="f1 f5rem-ns fw6 brand">{{ site.data.data.num_investors }}+</div>
+        <p class="fw3">Antal investerare i vårt nätverk</p>
+      </li>
+    </ul>
+  </div>
+</section>
