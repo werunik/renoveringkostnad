@@ -76,8 +76,8 @@
 </header>
     <main>
 	<form id="nl-form" class="nl-form">
-  <span id="timeofday">Godmorgon</span>! <br />
-  Jag heter <input type="text" name="owner" value="" placeholder="skriv ditt namn" data-subline="For example: &lt;em&gt;Alexandra&lt;/em&gt; or &lt;em&gt;Björn&lt;/em&gt;" />,
+  Good <span id="timegreetings"></span> it's <span id="daygreetings"></span>! <br />
+  Jag heter <input type="text" name="name" value="" placeholder="skriv ditt namn" data-subline="For example: &lt;em&gt;Alexandra&lt;/em&gt; or &lt;em&gt;Björn&lt;/em&gt;" />,
   och önskar renovera mitt
   <select name="project">
     <option value="kitchen" selected="">Kök</option>
@@ -88,8 +88,10 @@
   </select>
   <br />som är
   <input type="text" name="size" value="" placeholder="kvadratmeter" data-subline="For example: &lt;em&gt;5&lt;/em&gt; or &lt;em&gt;20&lt;/em&gt;" /> kvm.  
+  <p class="f2">Jag skulle vilja få den totala kostnaden på <input type="email" name="email" value="" placeholder="min e-postadress" data-subline="For example: &lt;em&gt;Alexandra&lt;/em&gt; or &lt;em&gt;Björn&lt;/em&gt;" /></p>
+  <input type="hidden" id="locationName" name="location" value="" />
   <div class="nl-submit-wrap">
-    <button class="btn btn--primary uppercase" type="submit" onclick="return calculateTotal(this.form)">Rakna total kostnad</button>
+    <button class="btn btn--primary uppercase f3" type="submit" onclick="return calculateTotal(this.form)">Skicka total kostnad</button>
   </div>
   <div class="nl-overlay"></div>
 </form>
@@ -98,6 +100,7 @@
     <footer>
   <a href="/" class="white">Renovering Kostnad 2017</a>
 </footer>
+    <script src="/assets/scripts/greetings.js" type="text/javascript"></script>
     <script src="/assets/scripts/calculator.js" type="text/javascript"></script>
     
       

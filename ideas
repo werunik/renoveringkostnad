@@ -1,10 +1,48 @@
 Ideas
 
-The user has a form where he set some date
-eg.
-Size (1m2)
-Type (kitchen, bathroom)
+Get day
+  case monday
+  "Boo it is monday today"
+  case tuesday
+  "Boo it is tuesday today"
 
-Click save
-Boom, he get a price estimation
-Ask if he want a professional to send me a real offer with 20% discount.
+Get Location, ip from browser
+
+Get weather
+
+=====================
+A/B
+====================
+Picture
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #fff;
+    background-image: url(https://static.pexels.com/photos/355022/pexels-photo-355022.jpeg);
+    background-size: cover;
+    font-weight: 300;
+    line-height: 1.4;
+    text-shadow: none;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+}
+main {
+    margin: 0 auto;
+    padding-top: 60px;
+    max-width: 540px;
+    width: 94%;
+    position: absolute;
+    right: 0;
+    background: #0099cc91;
+    padding: 20px;
+}
